@@ -10,8 +10,6 @@ puts
 
 puts "OpenSSL errors: #{OpenSSL.errors.size}"
 
-#`yes | ssh-keygen -t ed25519 -f key -N '' -C libssh2-issues-1107`
-
 repo_url = "ssh://git@github.com/libssh2/libssh2.git"
 
 ssh_key = Rugged::Credentials::SshKey.new(username: "git", publickey: "/key.pub", privatekey: "/key")
